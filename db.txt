@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS bd_api;
+CREATE DATABASE bd_api CHARSET utf8mb4;
+USE bd_api;
+
+CREATE TABLE otg_demo_users (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NOT NULL,
+  age INT NULL,
+  city VARCHAR(45) NULL,
+PRIMARY KEY (`id`));
+
+INSERT INTO otg_demo_users(name, age, city) VALUES('Jake', 21, 'London');
+INSERT INTO otg_demo_users(name, age, city) VALUES('Mathew', 24, 'Sydney');
+INSERT INTO otg_demo_users(name, age, city) VALUES('Bob', 35, 'Newyork');
+commit;
